@@ -43,6 +43,8 @@ modules=(
     webpack
     gulp-cli
     gulp
+    now
+    create-next-app
 )
 
 # Installing each modules
