@@ -85,7 +85,8 @@ plugins=(
   eslint,
   now,
   firebase,
-  electron-builder
+  electron-builder,
+  create-next-app 
 )
 
 source $ZSH/oh-my-zsh.sh
