@@ -45,6 +45,7 @@ modules=(
     gulp
     now
     create-next-app
+    fkill
 )
 
 # Installing each modules

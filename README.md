@@ -1,6 +1,5 @@
-# Personal config files 🔥 🚀
+# Personal system config files for mac & Linux  🔥 🚀
 
-- New setup
 - Bash
 - Hyper.
 - Visual Studio Code.
