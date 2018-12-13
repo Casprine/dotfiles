@@ -46,6 +46,7 @@ modules=(
     now
     create-next-app
     fkill
+    degit
 )
 
 # Installing each modules
