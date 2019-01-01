@@ -46,7 +46,8 @@ modules=(
     now
     create-next-app
     fkill
-    degit
+    degit,
+    pa11y
 )
 
 # Installing each modules
@@ -75,7 +76,6 @@ brew cask install --appdir="/Applications" ${apps[@]}
 # Personal Folders
 folders=(
     Design
-    Sketch
     Personal
     Office
 )
