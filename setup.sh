@@ -5,17 +5,20 @@ if test ! $(which brew); then
      ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Update brew
+echo "Updating brew"
 brew update
 
-# Install git
-brew intall git
+# Update brew 
+brewModules=(
+    git
+    wget
+    node
+    zsh
+)
 
-# Install wget
-brew install wget
-
-# Install Zsh
-brew install zsh
+# Installing a needed brew stuff
+echo "Installing Homebrew needed stuff"
+brew install ${brewModules[@]}
 
 # set default git config
 git config --global user.name "Casprine Assempah"
