@@ -20,12 +20,23 @@ brewModules=(
 echo "Installing Homebrew needed stuff"
 brew install ${brewModules[@]}
 
+
+# Setting oh-my-zsh as default shell
+echo "Setting oh-my-zsh as default shell"
+chsh -s /bin/zsh
+
+# Get current .zshrc profile
+echo "Getting Current oh-my-zsh profile"
+rm -r ~/.zshrc
+wget https://github.com/Casprine/dotfiles/blob/master/bash/.zshrc ~/
+
 # set default git config
 git config --global user.name "Casprine Assempah"
 git config --global user.email "casprine.001@gmail.com"
 git config --global color.ui true
 git config --global push.default simple
 git config --global core.editor vim
+git config --global core.ignorecase false
 
 # Install node
 brew install node
@@ -36,21 +47,26 @@ npm install -g yarn
 # Global yarn modules
 modules=(
     watchman
-    @vue/cli
     create-react-app
-    react-native-cli
     create-react-native-app
-    gatsby
+    gatsby-cli,
+    ghost-cli,
+    prettier,
+    react-native-cli,
+    reason-cli,
+    typescript,
     nodemon
     serve
     webpack
-    gulp-cli
-    gulp
     now
     create-next-app
     fkill
     degit,
-    pa11y
+    @react-native-community,
+    bs-platform,
+    expo-cli,
+    eslint, 
+
 )
 
 # Installing each modules
@@ -78,9 +94,10 @@ brew cask install --appdir="/Applications" ${apps[@]}
 
 # Personal Folders
 folders=(
-    Design
-    Personal
-    Office
+    design
+    oss
+    studies
+    clients
 )
 
 # Create folders

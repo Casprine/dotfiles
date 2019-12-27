@@ -51,11 +51,11 @@ alias ya='yarn add'
 alias yag="yarn global add"
 
 # directory alias
-alias images='cd ~/Desktop/Images'
-alias design='cd ~/Desktop/Design'
-alias personal='cd ~/Desktop/Personal'
+alias design='cd ~/Desktop/design'
+alias clients='cd ~/Desktop/cleints'
+alias oss='cd ~/Desktop/oss'
+alias studies='cd ~/Desktop/studies'
 alias gitignore='touch .gitignore'
-
 
 
 # functions
