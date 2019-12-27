@@ -1,26 +1,17 @@
-
-
-
 export ZSH=$HOME/.oh-my-zsh
 
 # oh-my-zsh theme
-ZSH_THEME="pygmalion"
+ZSH_THEME="nox"
 
 # plugins
 plugins=(
   git,
   node,
-  jekyll,
-  sass,
-  gulp,
-  ruby,
-  docusaurus-init,
   done,
   nvm,
   ngrok,
   code,
   vue,
-  wine,
   yarn,
   npm,
   nodemon,
@@ -32,64 +23,6 @@ plugins=(
   firebase,
   electron-builder
 )
-
-source $ZSH/oh-my-zsh.sh
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# git alias
-alias gp='git push'
-alias ga='git add .'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gcl='git clone'
-alias gs='git status'
-alias gb="git branch"
-
-# node alias
-alias rnm='rm -rf */node_modules'
-alias ya='yarn add'
-alias yag="yarn global add"
-
-# directory alias
-alias images='cd ~/Desktop/Images'
-alias design='cd ~/Desktop/Design'
-alias personal='cd ~/Desktop/Personal'
-alias gitignore='touch .gitignore'
-export ZSH=$HOME/.oh-my-zsh
-
-# oh-my-zsh theme
-ZSH_THEME="pygmalion"
-
-# plugins
-plugins=(
-  git,
-  node,
-  jekyll,
-  sass,
-  gulp,
-  ruby,
-  docusaurus-init,
-  done,
-  nvm,
-  ngrok,
-  code,
-  vue,
-  wine,
-  yarn,
-  npm,
-  nodemon,
-  curl,
-  fathom,
-  go,
-  eslint,
-  now,
-  firebase,
-  electron-builder,
-  create-next-app 
-)
-
-source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -106,6 +39,11 @@ alias gc='git commit'
 alias gcm='git commit -m'
 alias gcl='git clone'
 alias gs='git status'
+alias gb='git brach'
+alias glog='git log --graph --all --decorate'
+alias @casprine='git config --global user.name "casprine" && git config --global user.email "casprine.001@gmail.com"'
+alias @chilli='git config --global user.name "casprine_ix" && git config --global user.email "casprine@sochilli.com"'
+
 
 # node alias
 alias rnm='rm -rf */node_modules'
@@ -117,3 +55,15 @@ alias images='cd ~/Desktop/Images'
 alias design='cd ~/Desktop/Design'
 alias personal='cd ~/Desktop/Personal'
 alias gitignore='touch .gitignore'
+
+
+
+# functions
+function mkd() {
+    mkdir -p "$@" && cd "$_";
+}
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+eval "$(starship init zsh)"
