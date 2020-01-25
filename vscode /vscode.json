@@ -1,53 +1,61 @@
 {
-  "window.zoomLevel": 0,
-  "workbench.colorCustomizations": {},
-  "materialTheme.accentPrevious": "",
-  "workbench.colorTheme": "Material Theme Ocean",
-  "materialTheme.fixIconsRunning": false,
-  "workbench.iconTheme": "eq-material-theme-icons-ocean",
-  "editor.fontFamily": "Operator Mono",
-  "editor.fontSize": 11,
-  "editor.fontWeight": "normal",
-  "files.autoSave": "afterDelay",
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "editor.formatOnSave": true,
-  "javascript.format.enable": false,
-  "prettier.eslintIntegration": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "sync.gist": "bd1fcb008f4c3ac1b0d3068aff3aa25f",
-  "sync.host": "",
-  "sync.pathPrefix": "",
-  "sync.quietSync": false,
-  "sync.askGistName": false,
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true,
-  "sync.autoDownload": false,
-  "sync.autoUpload": false,
-  "sync.lastUpload": "2018-07-03T13:23:08.398Z",
-  "sync.lastDownload": "",
-  "sync.forceDownload": false,
-  "editor.tabCompletion": true,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
+  "workbench.colorTheme": "Atom One Light",
+  "editor.fontFamily": "Monaco for Powerline , Fira Code , 'Courier New', monospace,Operator Mono,Jetbrains Mono ",
+  "editor.fontLigatures": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#080c0f",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.foreground": "#15202b",
+    "titleBar.activeBackground": "#080c0f",
+    "titleBar.inactiveBackground": "#2b6cb099",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#000000",
+    "statusBarItem.hoverBackground": "#3e85d0",
+    "statusBar.foreground": "#e7e7e7"
   },
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.showSuggestionsAsSnippets": true,
-  "editor.snippetSuggestions": "top",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "vue-html": "html",
-    "plaintext": "jade"
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "gitlens.advanced.fileHistoryFollowsRenames": false,
-  "gitlens.keymap": "alternate",
-  "editor.minimap.enabled": true,
-  "workbench.activityBar.visible": true,
-  "editor.renderWhitespace": "all",
-  "terminal.integrated.rendererType": "dom",
-  "explorer.confirmDelete": false,
-  "breadcrumbs.enabled": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettiaer-vscode"
+  },
+  "git.ignoreLegacyWarning": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.fontLigatures": true
+  "prettier.disableLanguages": [],
+  "prettier.printWidth": 100,
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.renderControlCharacters": true,
+  "window.zoomLevel": -1,
+  "editor.fontSize": 16,
+  "gitlens.advanced.messages": {
+    "suppressGitVersionWarning": true
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.maxTokenizationLineLength": 1000000000000,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "ruby.rubocop.onSave": true,
+  "editor.formatOnSaveTimeout": 5000,
+  "files.associations": {
+    "*.erb": "erb"
+  },
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "yaml.schemas": {
+    "file:///home/team/.vscode-server/extensions/docsmsft.docs-yaml-0.2.4/schemas/toc.schema.json": "/toc\\.yml/i"
+  },
+  "fileheader.Author": "casprine",
+  "fileheader.LastModifiedBy": "casprine",
+  "workbench.statusBar.visible": true,
+  "workbench.fontAliasing": "antialiased",
+  "prettier.bracketSpacing": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }
